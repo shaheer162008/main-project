@@ -26,9 +26,9 @@ export default function SignIn() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
-      <div className="bg-white p-8 rounded shadow-lg w-96">
-        <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
+    <div className="flex items-center justify-center min-h-screen  bg-white">
+      <div className="bg-gray-200 p-8 rounded shadow-lg w-96">
+        <h1 className="text-2xl font-bold text-black mb-6 text-center">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="email"
@@ -36,7 +36,7 @@ export default function SignIn() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded text-black focus:outline-none focus:ring focus:ring-green-500 bg-white"
           />
           <input
             type="password"
@@ -44,12 +44,12 @@ export default function SignIn() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded text-black focus:outline-none focus:ring focus:ring-green-500 bg-white"
           />
           {error && <p className="text-red-500 text-sm">{error}</p>}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
           >
             Login
           </button>
